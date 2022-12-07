@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 30px 20px;
+	height: 100vh;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 3fr 1fr;
+	gap: 20px;
+	height: 100%;
+	border: 1px solid black;
+}
+
+aside,
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border: 1px solid red;
+}
+
+.side-red div {
+	height: 100%;
+	background-color: chocolate;
+}
+
+.main-blue div {
+	height: 100%;
+	background-color: aqua;
+}
+
+footer {
+	height: 200px;
+	background-color: blanchedalmond;
+	grid-column: 1 / span 2;
+}
