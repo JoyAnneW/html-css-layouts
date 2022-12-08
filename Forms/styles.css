@@ -7,4 +7,43 @@
 body {
 	padding: 30px;
 	height: 100vh;
+	font-family: sans-serif;
+}
+
+fieldset {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+fieldset div {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+#radio-btns {
+	flex-direction: row;
+	gap: 20px;
+}
+
+.radio {
+	display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+	padding: 10px 5px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+input[type="file"] {
+	border: 1px solid black;
 }
