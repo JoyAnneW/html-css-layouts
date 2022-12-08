@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Course Information</legend>
+				<label for="program">What programme are you intersted in?</label>
+				<select name="course" id="program">
+					<option value="">Please Select</option>
+					<option value="fsd">Full Stack Development</option>
+					<option value="ds">Data Science</option>
+					<option value="pm">Product Management</option>
+				</select>
+				<!--  -->
+				<label for="duration"
+					>What programme duration is your preference?</label
+				>
+				<select name="duration_pref" id="duration">
+					<option value="">Please Select</option>
+					<option value="ft">Full Time</option>
+					<option value="pt">Part Time</option>
+				</select>
+				<!--  -->
+				<p>Are you interested in applying for a scholarhip?</p>
+				<label for="yes_schol">Yes</label>
+				<input type="radio" name="need_schol" id="yes_schol" />
+				<!--  -->
+				<label for="no_schol">No</label>
+				<input type="radio" name="need_schol" id="no_schol" />
+			</fieldset>
+		</form>
+	</body>
+</html>
