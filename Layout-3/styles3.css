@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 30px 20px;
+	height: 100vh;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 100px 3fr;
+	grid-template-areas:
+		"logo logo"
+		"nav nav"
+		"main aside";
+	height: 100%;
+	border: 1px solid black;
+}
+
+.logo {
+	background-color: tomato;
+	grid-area: logo;
+}
+
+nav {
+	background-color: blanchedalmond;
+	grid-area: nav;
+}
+
+main {
+	background-color: blueviolet;
+	grid-area: main;
+}
+
+aside {
+	background-color: violet;
+	grid-area: aside;
+}
