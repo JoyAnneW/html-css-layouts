@@ -5,35 +5,105 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Forms</title>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<form>
 			<fieldset>
 				<legend>Course Information</legend>
-				<label for="program">What programme are you intersted in?</label>
-				<select name="course" id="program">
-					<option value="">Please Select</option>
-					<option value="fsd">Full Stack Development</option>
-					<option value="ds">Data Science</option>
-					<option value="pm">Product Management</option>
-				</select>
+				<div>
+					<label for="program">What programme are you intersted in?</label>
+					<select name="course" id="program">
+						<option value="">Please Select</option>
+						<option value="fsd">Full Stack Development</option>
+						<option value="ds">Data Science</option>
+						<option value="pm">Product Management</option>
+					</select>
+				</div>
 				<!--  -->
-				<label for="duration"
-					>What programme duration is your preference?</label
-				>
-				<select name="duration_pref" id="duration">
-					<option value="">Please Select</option>
-					<option value="ft">Full Time</option>
-					<option value="pt">Part Time</option>
-				</select>
+				<div>
+					<label for="duration"
+						>What programme duration is your preference?</label
+					>
+					<select name="duration_pref" id="duration">
+						<option value="">Please Select</option>
+						<option value="ft">Full Time</option>
+						<option value="pt">Part Time</option>
+					</select>
+				</div>
 				<!--  -->
+
 				<p>Are you interested in applying for a scholarhip?</p>
-				<label for="yes_schol">Yes</label>
-				<input type="radio" name="need_schol" id="yes_schol" />
+				<div>
+					<label for="yes_schol">Yes</label>
+					<input type="radio" name="need_schol" id="yes_schol" />
+				</div>
 				<!--  -->
-				<label for="no_schol">No</label>
-				<input type="radio" name="need_schol" id="no_schol" />
+				<div>
+					<label for="no_schol">No</label>
+					<input type="radio" name="need_schol" id="no_schol" />
+				</div>
 			</fieldset>
+			<fieldset>
+				<legend>Applicant Details</legend>
+				<div>
+					<label for="first_name">First Name</label>
+					<input type="text" name="first_name" id="first_name" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="last_name">Last Name</label>
+					<input type="text" name="last_name" id="last_name" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="email">Email </label>
+					<input type="email" name="email" id="email" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="phone">Phone Number</label>
+					<input type="tel" name="phone" id="phone" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="birthday">Birthday</label>
+					<input type="date" name="birthday" id="birthday" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="cv">Upload your CV here</label>
+					<input type="file" name="cv" id="cv" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Additional Information</legend>
+				<div>
+					<label for="socials">Social Media</label>
+					<input type="checkbox" name="socials" id="socials" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="blog">Blog</label>
+					<input type="checkbox" name="blog" id="blog" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="search">Search Engine</label>
+					<input type="checkbox" name="search" id="search" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="referral">Referral</label>
+					<input type="checkbox" name="referral" id="referral" />
+				</div>
+				<!--  -->
+				<div>
+					<label for="other">Other</label>
+					<input type="checkbox" name="other" id="other" />
+				</div>
+			</fieldset>
+			<button type="submit">Submit</button>
 		</form>
 	</body>
 </html>
